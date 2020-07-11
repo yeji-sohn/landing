@@ -1,0 +1,109 @@
+/* Write some CSS below */
+/* style.css */
+body {
+font-family: 'Open Sans Condensed', sans-serif;
+  color: #7F7979;
+  font-size: 18px;
+}
+
+h1{
+	font-family: 'Do Hyeon', sans-serif;
+	color: #323031;
+}
+
+h2, h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #323031;
+}
+
+a {
+  color: #E3B505;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .3s;
+}
+
+a:hover {
+  color: #FAC8CD;
+}
+
+p {
+	color: #7F7979;
+	opacity: .7;
+}
+
+@media (min-width: 1000px) {
+	.container {
+		width: 800px;
+		margin: auto;
+	}
+}
+
+.banner {
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/background.jpg');
+	background-size: cover;
+	background-position: center;
+	padding: 150px 0;
+	text-align: center;
+}
+
+.banner h1 {
+	color: white;
+	font-size: 45px;
+	margin: 0;
+}
+
+.banner p {
+	color: white;
+	font-size: 24px;
+}
+
+.button-blue {
+	background-color: #E3B505;
+	color: white;
+	padding: 16px 48px;
+	border-radius: 4px;
+	display: inline-block;
+	text-decoration: .3s;
+}
+
+.button-blue:hover {
+	background-color: #FAC8CD;
+	color: white;
+}
+
+@media (max-width: 800px) {
+	.cards {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 16px;
+	}
+
+	.card-white {
+		background: white;
+		box-shadow: 0 0 16px rgba(0,0,0,0.1);
+		border-radius: 4px;
+		width: 200px;
+		padding: 24px;
+		text-align: center;
+		margin: 8px;
+	}
+}
+
+.card-white img {
+	width: 180px;
+	height: :180px;
+	object-fit: cover;
+	border-radius: 4px;
+}
+
+.footer {
+	background: #E3B505;
+	text-align: center;
+	padding: 24px 0;
+}
+
+.footer p {
+	color: white;
+}
+
