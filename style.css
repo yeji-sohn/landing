@@ -32,13 +32,6 @@ p {
 	opacity: .7;
 }
 
-@media (min-width: 1000px) {
-	.container {
-		width: 800px;
-		margin: auto;
-	}
-}
-
 .banner {
 	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/background.jpg');
 	background-size: cover;
@@ -72,23 +65,25 @@ p {
 	color: white;
 }
 
-@media (max-width: 800px) {
-	.cards {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-gap: 16px;
-	}
 
-	.card-white {
-		background: white;
-		box-shadow: 0 0 16px rgba(0,0,0,0.1);
-		border-radius: 4px;
-		width: 200px;
-		padding: 24px;
-		text-align: center;
-		margin: 8px;
-	}
+.cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 16px;
+	margin-bottom: 24px;
+	background-position: center;
 }
+
+.card-white {
+	background: white;
+	box-shadow: 0 0 16px rgba(0,0,0,0.1);
+	border-radius: 4px;
+	width: 200px;
+	padding: 24px;
+	text-align: center;
+	margin: 8px;
+}
+
 
 .card-white img {
 	width: 180px;
@@ -107,3 +102,22 @@ p {
 	color: white;
 }
 
+/* cards media queries*/
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-white {
+    width: auto;
+  }
+}
+  
+/* Container media queries */
+
+@media (min-width: 1000px) {
+  .container {
+    width: 800px;
+    margin: auto;
+  }
+}
